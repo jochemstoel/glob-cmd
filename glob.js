@@ -5,7 +5,6 @@ var package = require('./package')
 
 program
     .version(package.version)
-    .command('glob')
     .description(`Match files using the patterns the shell uses, like stars and stuff.\n
 This is a [glob implementation in JavaScript](https://www.npmjs.com/package/glob) for command line use.`)
     .option('-j, --json', 'JSON encode matches (default separates by newline)')
