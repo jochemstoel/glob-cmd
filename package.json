@@ -7,7 +7,7 @@
     "test": "glob *.*"
   },
   "bin": {
-    "glob": "cli.js"
+    "glob": "glob.js"
   },
   "preferGlobal": true,
   "author": "Jochem Stoel",
