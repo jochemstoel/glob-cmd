@@ -5,6 +5,9 @@ var package = require('./package')
 
 program
     .version(package.version)
+    .command('glob')
+    .description(`Match files using the patterns the shell uses, like stars and stuff.\n
+This is a [glob implementation in JavaScript](https://www.npmjs.com/package/glob) for command line use.`)
     .option('-j, --json', 'JSON encode matches (default separates by newline)')
     .option('-s, --delimiter [separator]', 'Separate matches by delimiter (default separator is newline)')
     .option('-o, --output [filename]', 'Write to file (write to stdout by default)')
@@ -20,8 +23,10 @@ let options = {
 
 options.delimiter = (() => {
 	if(program.json) {
-		console.error('Can not specify delimiter when using --json')
-		process.exit()
+		if(program.delimiter) {
+			console.error('Can not specify delimiter when using --json')
+			process.exit()
+		}
 	} else {
 		return program.delimiter || '\n'
 	}
