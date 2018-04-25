@@ -1,11 +1,21 @@
 Match files using the patterns the shell uses, like stars and stuff.
 This is a [glob implementation in JavaScript](https://www.npmjs.com/package/glob) for command line use.
 
-```bash
+### Install globally
+If you require() this module, it will return just glob.
+
+```console
+npm i glob-cmd -g
+``` 
+
+### Help 
+A list of all currently possible options.
+
+```console
 glob --help
 ``` 
 
-```bash
+```console
 
   Usage: cli [options]
 
@@ -27,12 +37,12 @@ glob --help
 List all _.js_ files in current directory.
 
 Command:
-```bash
+```console
 glob *.js
 ```
 
 Output:
-```bash 
+```console 
 index.js
 utils.js
 cli.js
@@ -43,11 +53,11 @@ someotherstuff.js
 List mp3 files in current directory and JSON encode matches.
 
 Command:
-```bash
+```console
 glob --json *.mp3
 ```
 Output: 
-```bash
+```console
 [
    "01. SIR DRUMSALOT.mp3",
    "02. BRAVE.mp3",
@@ -68,12 +78,12 @@ Output:
 List all _.js_ files in all (sub)directories of current directory (_c:\codegroundjs_).
 
 Command:
-```bash
+```console
 glob **/*.js
 ```
 
 Outut:
-```bash
+```console
 dist/Codeground.js
 dist/Codeground.min.js
 dist/examples/es5/demo/script.js
@@ -91,12 +101,12 @@ test/test.js
 Use a delimiter to separate matches. In this case, a semi colon.
 
 Command:
-```bash
+```console
 glob --delimiter ; *.mp3
 ```
 
 Output:
-```bash
+```console
 01. SIR DRUMSALOT.mp3;02. BRAVE.mp3;03. WAKE UP FOOL.mp3;04. THE FEVER IS GROWING.mp3;05. THE LIFE FOR ME.mp3;06. MAKE BELIEVE.mp3;07. FUNNY KIND OF LOVE.mp3;08. WITHOUT YOU.mp3;09. RUNNING.mp3;10. REALITY.mp3;11. IT WILL NOT END.mp3;12. SCREW IT.mp3;
 ```
 
@@ -104,12 +114,12 @@ Output:
 List all files, directories and subdirectories in _node_modules/codegroundjs_.
 
 Command:
-```bash
+```console
 glob --cwd "e:/npm/node_modules/codegroundjs" **/*
 ```
 
 Output:
-```bash
+```console
 _config.yml
 assets
 assets/codeground-rows.png
@@ -158,6 +168,6 @@ test/test.js
 Recursively list only files (no directories) in _C:\files_ and write the results as JSON to found.json
 
 Command:
-```bash
+```console
 glob --nodir --json --cwd "c:\files" --output found.json **/*
 ```
