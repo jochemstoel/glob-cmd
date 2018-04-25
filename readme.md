@@ -17,7 +17,7 @@ glob --help
 
 ```console
 
-  Usage: cli [options]
+  Usage: glob [options]
 
   Options:
 
