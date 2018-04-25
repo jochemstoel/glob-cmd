@@ -1,0 +1,37 @@
+{
+  "name": "glob-cmd",
+  "version": "0.0.4",
+  "description": "This is a glob implementation in JavaScript for command line use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "glob *.*"
+  },
+  "bin": {
+    "glob": "cli.js"
+  },
+  "preferGlobal": true,
+  "author": "Jochem Stoel",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "glob": "^7.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jochemstoel/glob-cmd.git"
+  },
+  "keywords": [
+    "glob",
+    "cli",
+    "cmd",
+    "windows",
+    "linux",
+    "apple",
+    "command-line"
+  ],
+  "bugs": {
+    "url": "https://github.com/jochemstoel/glob-cmd/issues"
+  },
+  "homepage": "https://github.com/jochemstoel/glob-cmd#readme"
+}
