@@ -49,6 +49,8 @@ cli.js
 someotherstuff.js
 ```
 
+<hr />
+
 #### JSON
 List mp3 files in current directory and JSON encode matches.
 
@@ -74,6 +76,8 @@ Output:
 ]
 ```
 
+<hr />
+
 #### Recursive
 List all _.js_ files in all (sub)directories of current directory (_c:\codegroundjs_).
 
@@ -97,6 +101,8 @@ src/Codeground.js
 test/test.js
 ``` 
 
+<hr />
+
 #### Delimiter (separator)
 Use a delimiter to separate matches. In this case, a semi colon.
 
@@ -109,6 +115,8 @@ Output:
 ```console
 01. SIR DRUMSALOT.mp3;02. BRAVE.mp3;03. WAKE UP FOOL.mp3;04. THE FEVER IS GROWING.mp3;05. THE LIFE FOR ME.mp3;06. MAKE BELIEVE.mp3;07. FUNNY KIND OF LOVE.mp3;08. WITHOUT YOU.mp3;09. RUNNING.mp3;10. REALITY.mp3;11. IT WILL NOT END.mp3;12. SCREW IT.mp3;
 ```
+
+<hr />
 
 #### Working directory
 List all files, directories and subdirectories in _node_modules/codegroundjs_.
@@ -163,6 +171,8 @@ src/Codeground.js
 test
 test/test.js
 ```
+
+<hr />
 
 #### Match only files/directories
 Recursively list only files (no directories) in _C:\files_ and write the results as JSON to found.json
